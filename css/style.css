@@ -1,9 +1,8 @@
 body{
 	text-align: center;
-  background: #00816A;
+	background: #333 url('https://source.unsplash.com/weekly?javascript') no-repeat center center/cover;
   font-family: sans-serif;
 	font-weight: 100;
-	background: #333 url('https://source.unsplash.com/weekly?javascript') no-repeat center center/cover;
 	color: #fff; 
 	height: 100vh;
 }
@@ -35,14 +34,14 @@ h2{
 #clockdiv > div{
 	padding: 10px;
 	border-radius: 3px;
-	background: #00BF96;
+	background: rgb(121, 18, 27);
 	display: inline-block;
 }
 
 #clockdiv div > span{
 	padding: 15px;
 	border-radius: 3px;
-	background: #00816A;
+	background: #FFCD32;
 	display: inline-block;
 }
 
