@@ -1,4 +1,4 @@
-# TimeLeft
+# Coding Boot Camp Graduation Timer
 
 App Link: https://geeksimplified.github.io/TimeLeft/
 
