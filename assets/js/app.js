@@ -72,5 +72,5 @@ function initializeClock(id, endtime) {
 
 var countDownDate = new Date("Oct 25, 2019 10:00:00").getTime();
 
-var deadline = new Date("Oct 28, 2019 14:30:00");
+var deadline = new Date("Oct 25, 2019 10:00:00");
 initializeClock('clockdiv', deadline);
