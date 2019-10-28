@@ -1,6 +1,6 @@
 # Coding Boot Camp Graduation Timer
 
-Graduation Countdown Timer for University of Minnesota / Trilogy Coding Boot Camp Cohort 16. Based on our graduation date of: Friday, October 25th, 2019 at 10:00 AM.
+What was once a Graduation Countdown Timer for University of Minnesota / Trilogy Coding Boot Camp Cohort 16 is now a Christmas 2019 Countdown.
 
 Namaste! - Shawn
 
