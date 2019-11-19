@@ -16,6 +16,7 @@ h1 {
 	font-weight: 100;
 	font-size: 40px;
 	margin: 40px 0px 20px;
+	z-index: 0;
 }
 
 h2 {
@@ -24,6 +25,7 @@ h2 {
 	font-size: 32px;
 	margin: 40px 0px 20px;
 	padding-bottom: 15px;
+	z-index: 0;
 }
 
 #clockdiv {
