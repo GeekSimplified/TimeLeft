@@ -2,11 +2,12 @@ body {
 	text-align: center;
 	background: #333;
 	background: #333 url('https://source.unsplash.com/weekly?christmas') no-repeat center center/cover;
-	/* opacity: 0.3; */
+	opacity: 0.3;
 	font-family: sans-serif;
 	font-weight: 100;
 	color: #fff;
 	height: 100vh;
+	z-index: -1;
 }
 
 h1 {
