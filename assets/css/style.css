@@ -35,6 +35,7 @@ h2 {
 	display: inline-block;
 	font-weight: 800;
 	text-align: center;
+	z-index: 0;
 }
 
 #clockdiv>div {
@@ -42,6 +43,7 @@ h2 {
 	border-radius: 3px;
 	background: rgb(121, 18, 27);
 	display: inline-block;
+	z-index: 0;
 }
 
 #clockdiv div>span {
@@ -49,9 +51,11 @@ h2 {
 	border-radius: 3px;
 	background: darkgreen;
 	display: inline-block;
+	z-index: 0;
 }
 
 .smalltext {
 	padding-top: 5px;
 	font-size: 16px;
+	z-index: 0;
 }
