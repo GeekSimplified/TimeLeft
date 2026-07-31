@@ -46,6 +46,37 @@ function getTimeRemaining(endtime) {
   };
 }
 
+function updateHourglass(endtime) {
+  var sandTop = document.getElementById('sandTop');
+  var sandBottom = document.getElementById('sandBottom');
+  var stream = document.getElementById('stream');
+  if (!sandTop || !sandBottom) {
+    return;
+  }
+
+  var yearStart = new Date(endtime.getFullYear(), 0, 1).getTime();
+  var yearEnd = endtime.getTime();
+  var now = Date.now();
+
+  var fractionElapsed = (now - yearStart) / (yearEnd - yearStart);
+  fractionElapsed = Math.min(Math.max(fractionElapsed, 0), 1);
+  var fractionRemaining = 1 - fractionElapsed;
+
+  var maxHeight = 130;
+  var topHeight = maxHeight * fractionRemaining;
+  var bottomHeight = maxHeight * fractionElapsed;
+
+  sandTop.setAttribute('y', 150 - topHeight);
+  sandTop.setAttribute('height', topHeight);
+
+  sandBottom.setAttribute('y', 280 - bottomHeight);
+  sandBottom.setAttribute('height', bottomHeight);
+
+  if (stream) {
+    stream.style.display = fractionRemaining > 0 ? '' : 'none';
+  }
+}
+
 function initializeClock(id, endtime) {
   var clock = document.getElementById(id);
   var daysSpan = clock.querySelector('.days');
@@ -60,6 +91,8 @@ function initializeClock(id, endtime) {
     hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
     minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
     secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    updateHourglass(endtime);
 
     if (t.total <= 0) {
       clearInterval(timeinterval);

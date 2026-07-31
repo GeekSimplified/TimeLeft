@@ -12,7 +12,32 @@
 <body>
 
   <div id="gopher">
-    <!-- <img src="./assets/img/tree.png" alt="Christmas Tree" width="225" height="150"> -->
+    <svg id="hourglass" viewBox="0 0 200 300" width="200" height="300" aria-hidden="true">
+      <rect x="30" y="8" width="140" height="10" rx="3" class="frame"/>
+      <rect x="30" y="282" width="140" height="10" rx="3" class="frame"/>
+      <rect x="35" y="18" width="6" height="264" class="frame"/>
+      <rect x="159" y="18" width="6" height="264" class="frame"/>
+
+      <defs>
+        <clipPath id="clipTop">
+          <path d="M50,20 L150,20 L100,150 Z"/>
+        </clipPath>
+        <clipPath id="clipBottom">
+          <path d="M50,280 L150,280 L100,150 Z"/>
+        </clipPath>
+      </defs>
+
+      <rect id="sandTop" x="50" y="20" width="100" height="130" class="sand" clip-path="url(#clipTop)"/>
+      <rect id="sandBottom" x="50" y="150" width="100" height="0" class="sand" clip-path="url(#clipBottom)"/>
+
+      <path d="M50,20 L150,20 L100,150 L150,280 L50,280 L100,150 Z" class="glass"/>
+
+      <g id="stream">
+        <circle class="grain" cx="100" cy="150" r="2"/>
+        <circle class="grain" cx="100" cy="150" r="2"/>
+        <circle class="grain" cx="100" cy="150" r="2"/>
+      </g>
+    </svg>
   </div>
 
   <!-- Display the countdown timer in an element -->
