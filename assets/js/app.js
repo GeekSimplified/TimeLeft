@@ -70,7 +70,7 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var countDownDate = new Date("Dec 31, 2020 23:59:00").getTime();
+var countDownDate = new Date("Dec 31, 2026 23:59:00").getTime();
 
-var deadline = new Date("Dec 31, 2020 23:59:00");
+var deadline = new Date("Dec 31, 2026 23:59:00");
 initializeClock('clockdiv', deadline);
